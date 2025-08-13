@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <img src="img/gundar.png" width="50px" height="50px" alt="Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">Profil Kami</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Hubungi Kami</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 id="welcome-text">Hi, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+        <img src="img/bannerfti.png" width="100%" height="auto" alt="Banner">
+    </section>
+
+    <!-- Visi & Misi -->
+    <section id="vision-mission" class="hidden fade-section">
+        <h2>Visi</h2>
+        <p>Pada tahun 2027 Universitas Gunadarma menjadi perguruan tinggi swasta berorientasi global dan berkontribusi dalam pembangunan berkelanjutan melalui tata kelola dan tri dharma perguruan tinggi yang adaptif, transformatif, dan inovatif dalam mendukung daya saing nasional.</p>
+
+        <h2>Misi</h2>
+        <ul>
+            <li>Menyelenggarakan proses pendidikan inovatif dan transformatif untuk menghasilkan SDM unggul yang mendukung program Indonesia maju pada ekosistem digital.</li>
+            <li>Menyelenggarakan kegiatan penelitian yang mendorong pengembangan dan penyebarluasan IPTEKS di tingkat nasional dan internasional.</li>
+            <li>Menyelenggarakan kegiatan pengabdian kepada masyarakat yang mendukung peningkatan kualitas hidup masyarakat, perekonomian nasional, dan pelestarian lingkungan yang seimbang dan berkelanjutan.</li>
+            <li>Menyelenggarakan kemitraan nasional dan internasional yang mendukung penguatan identitas nasional, dan jati diri bangsa di lingkungan global.</li>
+            <li>Menerapkan tata kelola universitas yang baik, modern, adaptif, dan transformatif dalam pengembangan ekosistem digital yang bersifat multidisiplin ilmu untuk peningkatan kinerja institusi.</li>
+        </ul>
+    </section>
+
+    <!-- Our Headquarters -->
+    <section id="profile" class="hidden fade-section">
+        <h2>Our Headquarter</h2>
+        <div class="cities">
+            <div class="city">
+                <img src="img/jakarta.png" class="circle" alt="Jakarta">
+                <p>Jakarta</p>
+            </div>
+            <div class="city">
+                <img src="img/bandung.png" class="circle" alt="Bandung">
+                <p>Bandung</p>
+            </div>
+            <div class="city">
+                <img src="img/bekasi.png" class="circle" alt="Bekasi">
+                <p>Bekasi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="hidden fade-section">
+        <h2>Message Us</h2>
+        <form id="messageForm">
+            <label>Nama:</label>
+            <input type="text" id="name" name="name">
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label>Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label>Pesan:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>@2025 Created By Ferdi</p> 
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
