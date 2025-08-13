@@ -54,3 +54,8 @@ window.addEventListener("scroll", function() {
         }
     });
 });
+
+// Toggle menu di mobile
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("navbar").classList.toggle("show");
+});

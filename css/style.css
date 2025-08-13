@@ -12,6 +12,11 @@ header {
     padding: 10px 20px;
     background: #cc80ff;
     color: white;
+    position: relative;
+}
+
+nav {
+    display: flex;
 }
 
 nav a {
@@ -23,6 +28,40 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+}
+
+/* Tombol menu (hamburger) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #cc80ff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        z-index: 999;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.show {
+        display: flex;
+    }
 }
 
 /* Banner */
@@ -110,7 +149,7 @@ form button {
 }
 
 form button:hover {
-    background: #cc80ff;
+    background: #b76ee8;
 }
 
 /* Footer */
